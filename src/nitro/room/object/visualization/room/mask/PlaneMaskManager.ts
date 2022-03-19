@@ -1,6 +1,6 @@
-﻿import { Graphics } from '@pixi/graphics';
+﻿import { IGraphicAssetCollection } from '@nitrots/api';
+import { Graphics } from '@pixi/graphics';
 import { Matrix, Point } from '@pixi/math';
-import { IGraphicAssetCollection } from '../../../../../../room/object/visualization/utils/IGraphicAssetCollection';
 import { IVector3D } from '../../../../../../room/utils/IVector3D';
 import { PlaneMask } from './PlaneMask';
 import { PlaneMaskVisualization } from './PlaneMaskVisualization';

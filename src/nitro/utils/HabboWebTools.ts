@@ -1,4 +1,4 @@
-﻿import { NitroLogger } from '../../core/common/logger/NitroLogger';
+﻿import { NitroLogger } from '@nitrots/api';
 import { LegacyExternalInterface } from '../externalInterface/LegacyExternalInterface';
 
 export class HabboWebTools

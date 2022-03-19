@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { RoomModerationData } from '../../incoming/moderation/RoomModerationData';
 
 export class ModeratorRoomInfoMessageParser implements IMessageParser

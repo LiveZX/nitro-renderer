@@ -1,5 +1,5 @@
-import { IDisposable } from '../../core/common/disposable/IDisposable';
-import { IMessageEvent } from '../../core/communication/messages/IMessageEvent';
+import { IMessageEvent } from '@nitrots/api';
+import { IDisposable } from '../../api/common/IDisposable';
 import { GroupBadgesEvent } from '../communication/messages/incoming/group/GroupBadgesEvent';
 import { GroupBadgesComposer } from '../communication/messages/outgoing/group/GroupBadgesComposer';
 import { SessionDataManager } from './SessionDataManager';

@@ -1,5 +1,5 @@
-﻿import { Point } from '@pixi/math';
-import { IGraphicAsset } from '../../../../../../../room/object/visualization/utils/IGraphicAsset';
+﻿import { IGraphicAsset } from '@nitrots/api';
+import { Point } from '@pixi/math';
 
 export class AnimationItem
 {

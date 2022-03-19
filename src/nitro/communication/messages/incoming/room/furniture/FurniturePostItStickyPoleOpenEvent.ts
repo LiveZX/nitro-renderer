@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { FurniturePostItStickyPoleOpenParser } from '../../../parser/room/furniture/FurniturePostItStickyPoleOpenParser';
 
 export class FurniturePostItStickyPoleOpenEvent extends MessageEvent implements IMessageEvent

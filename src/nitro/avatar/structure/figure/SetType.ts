@@ -1,4 +1,4 @@
-import { AdvancedMap } from '../../../../core/utils/AdvancedMap';
+import { AdvancedMap } from '@nitrots/api';
 import { IFigureDataSetType } from '../../interfaces';
 import { FigurePartSet } from './FigurePartSet';
 import { IFigurePartSet } from './IFigurePartSet';

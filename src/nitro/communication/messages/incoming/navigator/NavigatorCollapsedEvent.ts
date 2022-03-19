@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { NavigatorCollapsedParser } from '../../parser/navigator/NavigatorCollapsedParser';
 
 export class NavigatorCollapsedEvent extends MessageEvent implements IMessageEvent

@@ -1,7 +1,6 @@
+import { IDisposable, IGraphicAsset } from '@nitrots/api';
 import { RenderTexture } from '@pixi/core';
 import { Sprite } from '@pixi/sprite';
-import { IDisposable } from '../../core/common/disposable/IDisposable';
-import { IGraphicAsset } from '../../room/object/visualization/utils/IGraphicAsset';
 import { IAnimationLayerData } from './animation/IAnimationLayerData';
 import { IAvatarDataContainer } from './animation/IAvatarDataContainer';
 import { ISpriteDataContainer } from './animation/ISpriteDataContainer';

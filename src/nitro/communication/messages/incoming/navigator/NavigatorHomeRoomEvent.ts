@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { NavigatorHomeRoomParser } from '../../parser/navigator/NavigatorHomeRoomParser';
 
 export class NavigatorHomeRoomEvent extends MessageEvent implements IMessageEvent

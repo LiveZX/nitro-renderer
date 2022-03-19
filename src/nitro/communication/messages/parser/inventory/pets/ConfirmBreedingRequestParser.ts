@@ -1,4 +1,4 @@
-﻿import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+﻿import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { BreedingPetInfo } from '../../../incoming/room/pet/BreedingPetInfo';
 import { RarityCategoryData } from '../../../incoming/room/pet/RarityCategoryData';
 

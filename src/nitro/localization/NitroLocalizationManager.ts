@@ -1,4 +1,4 @@
-﻿import { NitroManager } from '../../core/common/NitroManager';
+﻿import { NitroManager } from '@nitrots/api';
 import { Nitro } from '../Nitro';
 import { BadgeBaseAndLevel } from './BadgeBaseAndLevel';
 import { INitroLocalizationManager } from './INitroLocalizationManager';

@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { DesktopViewEvent } from '../../communication/messages/incoming/desktop/DesktopViewEvent';
 import { RoomDoorbellAcceptedEvent } from '../../communication/messages/incoming/room/access/doorbell/RoomDoorbellAcceptedEvent';
 import { RoomDoorbellRejectedEvent } from '../../communication/messages/incoming/room/access/doorbell/RoomDoorbellRejectedEvent';

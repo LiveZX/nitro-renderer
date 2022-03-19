@@ -1,5 +1,5 @@
+import { AdvancedMap } from '@nitrots/api';
 import { IRoomObjectModel } from './IRoomObjectModel';
-import { AdvancedMap } from '../../core/utils/AdvancedMap';
 
 export interface IRoomObjectModelController extends IRoomObjectModel
 {

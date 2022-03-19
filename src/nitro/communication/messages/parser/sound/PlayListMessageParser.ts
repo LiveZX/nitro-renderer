@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { PlayListEntry } from '../../incoming/sound';
 
 export class PlayListMessageParser implements IMessageParser

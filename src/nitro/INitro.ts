@@ -1,10 +1,6 @@
+import { IEventDispatcher, ILinkEventTracker, INitroCore, IWorkerEventTracker } from '@nitrots/api';
 import { Application } from '@pixi/app';
 import { Ticker } from '@pixi/ticker';
-import { IEventDispatcher } from '../core/events/IEventDispatcher';
-import { ILinkEventTracker } from '../core/events/ILinkEventTracker';
-import { IWorkerEventTracker } from '../core/events/IWorkerEventTracker';
-import { INitroCore } from '../core/INitroCore';
-import { NitroTimer } from '../core/utils/NitroTimer';
 import { IRoomManager } from '../room/IRoomManager';
 import { IAvatarRenderManager } from './avatar/IAvatarRenderManager';
 import { IRoomCameraWidgetManager } from './camera/IRoomCameraWidgetManager';
@@ -30,7 +26,6 @@ export interface INitro extends Application
     removeLinkEventTracker(tracker: ILinkEventTracker): void;
     createLinkEvent(link: string): void;
     setWorker(val: Worker): void;
-    nitroTimer: NitroTimer;
     core: INitroCore;
     events: IEventDispatcher;
     localization: INitroLocalizationManager;

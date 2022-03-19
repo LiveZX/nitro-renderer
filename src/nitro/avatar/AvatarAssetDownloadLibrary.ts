@@ -1,5 +1,4 @@
-import { IAssetManager } from '../../core/asset/IAssetManager';
-import { EventDispatcher } from '../../core/events/EventDispatcher';
+import { EventDispatcher, IAssetManager } from '@nitrots/api';
 import { AvatarRenderLibraryEvent } from './events/AvatarRenderLibraryEvent';
 
 export class AvatarAssetDownloadLibrary extends EventDispatcher

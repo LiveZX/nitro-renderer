@@ -1,4 +1,4 @@
-import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
+import { IMessageDataWrapper } from '@nitrots/api';
 import { ChatRecordData } from './ChatRecordData';
 
 export class CfhChatlogData

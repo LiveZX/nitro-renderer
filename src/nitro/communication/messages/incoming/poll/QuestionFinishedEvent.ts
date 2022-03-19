@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { QuestionFinishedParser } from '../../parser/poll/QuestionFinishedParser';
 
 export class QuestionFinishedEvent extends MessageEvent implements IMessageEvent

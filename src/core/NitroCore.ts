@@ -1,12 +1,8 @@
+import { Disposable, IAssetManager, ICommunicationManager, IConfigurationManager, INitroCore } from '@nitrots/api';
 import { AssetManager } from './asset/AssetManager';
-import { IAssetManager } from './asset/IAssetManager';
-import { Disposable } from './common/disposable/Disposable';
 import { CommunicationManager } from './communication/CommunicationManager';
-import { ICommunicationManager } from './communication/ICommunicationManager';
 import { ConfigurationManager } from './configuration/ConfigurationManager';
-import { IConfigurationManager } from './configuration/IConfigurationManager';
-import { INitroCore } from './INitroCore';
-import { SayHello } from './utils/SayHello';
+import { SayHello } from './SayHello';
 
 export class NitroCore extends Disposable implements INitroCore
 {

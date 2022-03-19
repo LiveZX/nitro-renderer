@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { ConditionDefinition } from '../../incoming/roomevents/ConditionDefinition';
 
 export class WiredFurniConditionParser implements IMessageParser

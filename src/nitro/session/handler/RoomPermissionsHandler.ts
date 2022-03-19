@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { RoomRightsClearEvent } from '../../communication/messages/incoming/room/access/rights/RoomRightsClearEvent';
 import { RoomRightsEvent } from '../../communication/messages/incoming/room/access/rights/RoomRightsEvent';
 import { RoomRightsOwnerEvent } from '../../communication/messages/incoming/room/access/rights/RoomRightsOwnerEvent';

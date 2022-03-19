@@ -26,7 +26,8 @@
     "paths": {
       "mini-signals": [
         "node_modules/mini-signals/index.js"
-      ]
+      ],
+      "@nitrots/api": [ "api" ]
     },
   },
   "include": [

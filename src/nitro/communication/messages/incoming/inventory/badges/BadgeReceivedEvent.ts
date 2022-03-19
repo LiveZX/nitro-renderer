@@ -1,5 +1,4 @@
-﻿import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+﻿import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { BadgeReceivedParser } from '../../../parser/inventory/badges/BadgeReceivedParser';
 
 export class BadgeReceivedEvent extends MessageEvent implements IMessageEvent

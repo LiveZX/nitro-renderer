@@ -1,4 +1,4 @@
-﻿import { IAssetAnimationFramePart } from '../../../core/asset/interfaces/animation/IAssetAnimationFramePart';
+﻿import { IAssetAnimationFramePart } from '@nitrots/api';
 import { ActiveActionData } from '../actions/ActiveActionData';
 import { IActionDefinition } from '../actions/IActionDefinition';
 import { IActiveActionData } from '../actions/IActiveActionData';

@@ -1,6 +1,5 @@
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { PetSupplementedNotificationParser } from '../..';
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
 
 export class PetSupplementedNotificationEvent extends MessageEvent implements IMessageEvent
 {

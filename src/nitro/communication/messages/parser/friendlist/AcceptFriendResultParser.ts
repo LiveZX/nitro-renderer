@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { AcceptFriendFailerData } from '../../incoming/friendlist/AcceptFriendFailureData';
 
 export class AcceptFriendResultParser implements IMessageParser

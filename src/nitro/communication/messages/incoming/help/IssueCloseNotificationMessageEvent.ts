@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { IssueCloseNotificationMessageParser } from '../../parser/help/IssueCloseNotificationMessageParser';
 
 export class IssueCloseNotificationMessageEvent extends MessageEvent implements IMessageEvent

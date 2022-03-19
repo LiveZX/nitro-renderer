@@ -1,4 +1,4 @@
-import { IEventDispatcher } from '../../../core/events/IEventDispatcher';
+import { IEventDispatcher } from '@nitrots/api';
 import { IRoomObjectEventHandler } from './IRoomObjectEventHandler';
 
 export interface IRoomObjectLogicFactory

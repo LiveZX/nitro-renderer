@@ -1,4 +1,4 @@
-﻿import { IConnection } from '../../../core/communication/connections/IConnection';
+﻿import { IConnection } from '@nitrots/api';
 import { RoomDimmerPresetsEvent } from '../../communication/messages/incoming/room/furniture/RoomDimmerPresetsMessageEvent';
 import { RoomSessionDimmerPresetsEvent } from '../events/RoomSessionDimmerPresetsEvent';
 import { IRoomHandlerListener } from '../IRoomHandlerListener';

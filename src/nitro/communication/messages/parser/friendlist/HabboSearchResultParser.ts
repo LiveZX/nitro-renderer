@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { HabboSearchResultData } from '../../incoming/friendlist/HabboSearchResultData';
 
 export class HabboSearchResultParser implements IMessageParser

@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { HabboBroadcastMessageParser } from '../../parser/notifications/HabboBroadcastMessageParser';
 
 export class HabboBroadcastMessageEvent extends MessageEvent implements IMessageEvent

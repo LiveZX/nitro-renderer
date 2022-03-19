@@ -1,5 +1,5 @@
 ﻿
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { AchievementData } from '../../../incoming/inventory/achievements/AchievementData';
 
 export class AchievementsParser implements IMessageParser

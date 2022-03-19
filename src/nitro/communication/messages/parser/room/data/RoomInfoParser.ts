@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { RoomChatSettings } from './RoomChatSettings';
 import { RoomDataParser } from './RoomDataParser';
 import { RoomModerationSettings } from './RoomModerationSettings';

@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { PetFigureUpdateEvent } from '../../communication';
 import { NewFriendRequestEvent } from '../../communication/messages/incoming/friendlist/NewFriendRequestEvent';
 import { BotErrorEvent } from '../../communication/messages/incoming/notifications/BotErrorEvent';

@@ -1,4 +1,4 @@
-import { IDisposable } from '../../core/common/disposable/IDisposable';
+import { IDisposable } from '@nitrots/api';
 import { IVector3D } from '../utils/IVector3D';
 import { IRoomObjectModel } from './IRoomObjectModel';
 import { IRoomObjectMouseHandler } from './logic/IRoomObjectMouseHandler';

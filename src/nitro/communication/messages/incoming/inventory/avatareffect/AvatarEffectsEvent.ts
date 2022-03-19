@@ -1,5 +1,4 @@
-﻿import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+﻿import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { AvatarEffectsParser } from '../../../parser/inventory/avatareffect/AvatarEffectsParser';
 
 export class AvatarEffectsEvent extends MessageEvent implements IMessageEvent

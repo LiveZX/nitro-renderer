@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { ClubOfferData } from '../../incoming/catalog/ClubOfferData';
 
 export class HabboClubOffersMessageParser implements IMessageParser

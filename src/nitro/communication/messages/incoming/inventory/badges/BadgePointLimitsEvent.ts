@@ -1,5 +1,4 @@
-﻿import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+﻿import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { BadgePointLimitsParser } from '../../../parser/inventory/badges/BadgePointLimitsParser';
 
 export class BadgePointLimitsEvent extends MessageEvent implements IMessageEvent

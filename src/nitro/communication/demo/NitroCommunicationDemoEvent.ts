@@ -1,5 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
-import { NitroEvent } from '../../../core/events/NitroEvent';
+import { IConnection, NitroEvent } from '@nitrots/api';
 
 export class NitroCommunicationDemoEvent extends NitroEvent
 {

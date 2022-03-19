@@ -1,5 +1,4 @@
-﻿import { IDisposable } from '../../core/common/disposable/IDisposable';
-import { IMessageEvent } from '../../core/communication/messages/IMessageEvent';
+﻿import { IDisposable, IMessageEvent } from '@nitrots/api';
 import { IgnoredUsersEvent } from '../communication/messages/incoming/user/IgnoredUsersEvent';
 import { IgnoreResultEvent } from '../communication/messages/incoming/user/IgnoreResultEvent';
 import { GetIgnoredUsersComposer } from '../communication/messages/outgoing/user/data/GetIgnoredUsersComposer';

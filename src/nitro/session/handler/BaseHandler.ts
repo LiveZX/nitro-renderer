@@ -1,5 +1,4 @@
-import { Disposable } from '../../../core/common/disposable/Disposable';
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { Disposable, IConnection } from '@nitrots/api';
 import { IRoomHandlerListener } from '../IRoomHandlerListener';
 
 export class BaseHandler extends Disposable

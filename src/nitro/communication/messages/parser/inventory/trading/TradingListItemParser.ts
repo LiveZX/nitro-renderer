@@ -1,4 +1,4 @@
-﻿import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+﻿import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { ItemDataStructure } from '../../../incoming/inventory/trading/ItemDataStructure';
 
 export class TradingListItemParser implements IMessageParser

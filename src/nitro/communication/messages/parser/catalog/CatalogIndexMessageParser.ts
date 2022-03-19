@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { NodeData } from '../../incoming/catalog/NodeData';
 
 export class CatalogIndexMessageParser implements IMessageParser

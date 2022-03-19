@@ -1,4 +1,4 @@
-import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
+import { IMessageDataWrapper } from '@nitrots/api';
 import { IMessageParser } from '../../../../../core/communication/messages/IMessageParser';
 
 export class CallForHelpReplyMessageParser implements IMessageParser

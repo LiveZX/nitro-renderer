@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { PerkAllowancesMessageParser } from './../../parser/perk/PerkAllowancesMessageParser';
 
 export class PerkAllowancesMessageEvent extends MessageEvent implements IMessageEvent

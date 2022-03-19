@@ -1,4 +1,4 @@
-﻿import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+﻿import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { AvatarEffect } from '../../../incoming/inventory/avatareffect/AvatarEffect';
 
 export class AvatarEffectsParser implements IMessageParser

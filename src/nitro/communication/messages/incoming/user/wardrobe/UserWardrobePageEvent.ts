@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { UserWardrobePageParser } from '../../../parser/user/wardrobe/UserWardrobePageParser';
 
 export class UserWardrobePageEvent extends MessageEvent implements IMessageEvent

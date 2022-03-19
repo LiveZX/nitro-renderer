@@ -1,7 +1,4 @@
-import { IAssetManager } from '../../core/asset/IAssetManager';
-import { NitroLogger } from '../../core/common/logger/NitroLogger';
-import { EventDispatcher } from '../../core/events/EventDispatcher';
-import { NitroEvent } from '../../core/events/NitroEvent';
+import { EventDispatcher, IAssetManager, NitroEvent, NitroLogger } from '@nitrots/api';
 import { Nitro } from '../Nitro';
 import { AvatarStructure } from './AvatarStructure';
 import { EffectAssetDownloadLibrary } from './EffectAssetDownloadLibrary';

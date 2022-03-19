@@ -1,5 +1,5 @@
+import { IMessageComposer } from '@nitrots/api';
 import { ModBanMessageComposer } from '.';
-import { IMessageComposer } from '../../../../../core/communication/messages/IMessageComposer';
 
 export class ModMuteMessageComposer implements IMessageComposer<ConstructorParameters<typeof ModMuteMessageComposer>>
 {

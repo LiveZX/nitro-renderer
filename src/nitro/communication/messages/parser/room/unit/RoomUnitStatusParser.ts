@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { RoomUnitStatusAction } from './RoomUnitStatusAction';
 import { RoomUnitStatusMessage } from './RoomUnitStatusMessage';
 

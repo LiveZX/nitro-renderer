@@ -1,4 +1,4 @@
-import { IGraphicAsset } from '../../../../../../room/object/visualization/utils/IGraphicAsset';
+import { IGraphicAsset } from '@nitrots/api';
 import { IVector3D } from '../../../../../../room/utils/IVector3D';
 import { PlaneMaskBitmap } from './PlaneMaskBitmap';
 

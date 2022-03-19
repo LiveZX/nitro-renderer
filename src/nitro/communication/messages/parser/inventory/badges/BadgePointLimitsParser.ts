@@ -1,4 +1,4 @@
-﻿import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+﻿import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { BadgeAndPointLimit } from './BadgeAndPointLimit';
 
 export class BadgePointLimitsParser implements IMessageParser

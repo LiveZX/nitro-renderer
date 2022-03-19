@@ -1,9 +1,5 @@
-import { Disposable } from '../common/disposable/Disposable';
-import { IUpdateReceiver } from '../common/IUpdateReceiver';
-import { IConnection } from './connections/IConnection';
-import { IConnectionStateListener } from './connections/IConnectionStateListener';
-import { SocketConnection } from './connections/SocketConnection';
-import { ICommunicationManager } from './ICommunicationManager';
+import { Disposable, ICommunicationManager, IConnection, IConnectionStateListener, IUpdateReceiver } from '@nitrots/api';
+import { SocketConnection } from '.';
 
 export class CommunicationManager extends Disposable implements ICommunicationManager, IUpdateReceiver
 {

@@ -1,5 +1,5 @@
+import { IConnection } from '@nitrots/api';
 import { PetSupplementedNotificationEvent, PetSupplementTypeEnum } from '../..';
-import { IConnection } from '../../../core/communication/connections/IConnection';
 import { FloodControlEvent } from '../../communication/messages/incoming/room/unit/chat/FloodControlEvent';
 import { RemainingMuteEvent } from '../../communication/messages/incoming/room/unit/chat/RemainingMuteEvent';
 import { RoomUnitChatEvent } from '../../communication/messages/incoming/room/unit/chat/RoomUnitChatEvent';

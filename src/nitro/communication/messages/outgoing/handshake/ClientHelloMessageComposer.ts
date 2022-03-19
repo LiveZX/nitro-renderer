@@ -1,7 +1,7 @@
+import { IMessageComposer } from '@nitrots/api';
+import { ClientDeviceCategoryEnum } from '../../../../../api/communication/connections/enums/ClientDeviceCategoryEnum';
+import { ClientPlatformEnum } from '../../../../../api/communication/connections/enums/ClientPlatformEnum';
 import { NitroVersion } from '../../../../../core';
-import { ClientDeviceCategoryEnum } from '../../../../../core/communication/connections/enums/ClientDeviceCategoryEnum';
-import { ClientPlatformEnum } from '../../../../../core/communication/connections/enums/ClientPlatformEnum';
-import { IMessageComposer } from '../../../../../core/communication/messages/IMessageComposer';
 
 export class ClientHelloMessageComposer implements IMessageComposer<ConstructorParameters<typeof ClientHelloMessageComposer>>
 {

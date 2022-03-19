@@ -1,7 +1,6 @@
-﻿import { Graphics } from '@pixi/graphics';
+﻿import { IDisposable, IGraphicAssetCollection } from '@nitrots/api';
+import { Graphics } from '@pixi/graphics';
 import { Matrix } from '@pixi/math';
-import { IDisposable } from '../../../../../../../core/common/disposable/IDisposable';
-import { IGraphicAssetCollection } from '../../../../../../../room/object/visualization/utils/IGraphicAssetCollection';
 import { IVector3D } from '../../../../../../../room/utils/IVector3D';
 import { AnimationItem } from './AnimationItem';
 

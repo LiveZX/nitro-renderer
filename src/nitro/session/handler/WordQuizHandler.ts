@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { QuestionAnsweredEvent } from '../../communication/messages/incoming/poll/QuestionAnsweredEvent';
 import { QuestionEvent } from '../../communication/messages/incoming/poll/QuestionEvent';
 import { QuestionFinishedEvent } from '../../communication/messages/incoming/poll/QuestionFinishedEvent';

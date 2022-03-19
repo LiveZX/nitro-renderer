@@ -1,4 +1,4 @@
-import { NitroManager } from '../../core/common/NitroManager';
+import { NitroManager } from '@nitrots/api';
 import { INitroCommunicationManager } from '../communication/INitroCommunicationManager';
 import { RoomEngineEvent } from '../room/events/RoomEngineEvent';
 import { IRoomEngine } from '../room/IRoomEngine';

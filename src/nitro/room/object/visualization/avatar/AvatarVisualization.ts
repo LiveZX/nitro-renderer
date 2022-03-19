@@ -1,13 +1,13 @@
+import { AdvancedMap } from '@nitrots/api';
 import { BLEND_MODES } from '@pixi/constants';
 import { Resource, Texture } from '@pixi/core';
-import { AdvancedMap } from '../../../../../core/utils/AdvancedMap';
+import { IGraphicAsset } from '../../../../../api/asset/utils/IGraphicAsset';
 import { AlphaTolerance } from '../../../../../room/object/enum/AlphaTolerance';
 import { RoomObjectSpriteType } from '../../../../../room/object/enum/RoomObjectSpriteType';
 import { IRoomObject } from '../../../../../room/object/IRoomObject';
 import { IRoomObjectModel } from '../../../../../room/object/IRoomObjectModel';
 import { IObjectVisualizationData } from '../../../../../room/object/visualization/IRoomObjectVisualizationData';
 import { RoomObjectSpriteVisualization } from '../../../../../room/object/visualization/RoomObjectSpriteVisualization';
-import { IGraphicAsset } from '../../../../../room/object/visualization/utils/IGraphicAsset';
 import { IRoomGeometry } from '../../../../../room/utils/IRoomGeometry';
 import { AvatarAction } from '../../../../avatar/enum/AvatarAction';
 import { AvatarGuideStatus } from '../../../../avatar/enum/AvatarGuideStatus';

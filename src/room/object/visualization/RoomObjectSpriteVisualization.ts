@@ -1,6 +1,7 @@
+import { NitroContainer, NitroSprite } from '@nitrots/api';
 import { RenderTexture } from '@pixi/core';
 import { Point, Rectangle } from '@pixi/math';
-import { NitroContainer, NitroSprite } from '../../../core';
+import { IGraphicAssetCollection } from '../../../api/asset/utils/IGraphicAssetCollection';
 import { RoomObjectSpriteData } from '../../data/RoomObjectSpriteData';
 import { IRoomGeometry } from '../../utils/IRoomGeometry';
 import { TextureUtils } from '../../utils/TextureUtils';
@@ -9,7 +10,6 @@ import { IRoomObjectSprite } from './IRoomObjectSprite';
 import { IRoomObjectSpriteVisualization } from './IRoomObjectSpriteVisualization';
 import { IObjectVisualizationData } from './IRoomObjectVisualizationData';
 import { RoomObjectSprite } from './RoomObjectSprite';
-import { IGraphicAssetCollection } from './utils/IGraphicAssetCollection';
 
 export class RoomObjectSpriteVisualization implements IRoomObjectSpriteVisualization
 {

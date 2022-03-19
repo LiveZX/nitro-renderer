@@ -1,5 +1,5 @@
+import { IGraphicAssetCollection } from '@nitrots/api';
 import { IRoomObjectVisualization } from './IRoomObjectVisualization';
-import { IGraphicAssetCollection } from './utils/IGraphicAssetCollection';
 
 export interface IRoomObjectGraphicVisualization extends IRoomObjectVisualization
 {

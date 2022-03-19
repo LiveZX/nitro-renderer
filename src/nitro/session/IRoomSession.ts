@@ -1,5 +1,4 @@
-import { IDisposable } from '../../core/common/disposable/IDisposable';
-import { IConnection } from '../../core/communication/connections/IConnection';
+import { IConnection, IDisposable } from '@nitrots/api';
 import { RoomModerationSettings } from '../communication/messages/parser/room/data/RoomModerationSettings';
 import { UserDataManager } from './UserDataManager';
 

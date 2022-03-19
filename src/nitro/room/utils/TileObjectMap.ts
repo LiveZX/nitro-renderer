@@ -1,4 +1,4 @@
-﻿import { NitroLogger } from '../../../core/common/logger/NitroLogger';
+﻿import { NitroLogger } from '@nitrots/api';
 import { IRoomObject } from '../../../room/object/IRoomObject';
 import { RoomObjectVariable } from '../object/RoomObjectVariable';
 

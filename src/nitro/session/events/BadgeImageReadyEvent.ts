@@ -1,5 +1,5 @@
+import { NitroEvent } from '@nitrots/api';
 import { Resource, Texture } from '@pixi/core';
-import { NitroEvent } from '../../../core/events/NitroEvent';
 
 export class BadgeImageReadyEvent extends NitroEvent
 {

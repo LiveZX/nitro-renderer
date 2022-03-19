@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { CatalogPageMessageOfferData } from '../../incoming/catalog/CatalogPageMessageOfferData';
 import { ClubGiftData } from '../../incoming/catalog/ClubGiftData';
 

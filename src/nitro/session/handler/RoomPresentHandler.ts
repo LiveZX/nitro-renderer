@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { PresentOpenedMessageEvent } from '../../communication/messages/incoming/inventory/furni/gifts/PresentOpenedMessageEvent';
 import { RoomSessionPresentEvent } from '../events/RoomSessionPresentEvent';
 import { IRoomHandlerListener } from '../IRoomHandlerListener';

@@ -1,5 +1,4 @@
-import { BinaryWriter } from '../../../core/communication/codec/BinaryWriter';
-import { BinaryReader } from './../../../core/communication/codec/BinaryReader';
+import { BinaryReader, BinaryWriter } from '@nitrots/api';
 
 export class TraxSample
 {

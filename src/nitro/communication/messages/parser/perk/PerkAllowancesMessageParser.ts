@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { PerkData } from './common/PerkData';
 
 export class PerkAllowancesMessageParser implements IMessageParser

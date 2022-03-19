@@ -1,7 +1,7 @@
+import { INitroManager } from '@nitrots/api';
 import { RenderTexture } from '@pixi/core';
 import { DisplayObject } from '@pixi/display';
 import { Point, Rectangle } from '@pixi/math';
-import { INitroManager } from '../../core/common/INitroManager';
 import { IRoomObject } from '../../room';
 import { IRoomManager } from '../../room/IRoomManager';
 import { IRoomObjectController } from '../../room/object/IRoomObjectController';

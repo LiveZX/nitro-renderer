@@ -1,5 +1,5 @@
+import { IMessageComposer } from '@nitrots/api';
 import { RenderTexture } from '@pixi/core';
-import { IMessageComposer } from '../../../../../core/communication/messages/IMessageComposer';
 import { TextureUtils } from '../../../../../room';
 
 export class RenderRoomMessageComposer implements IMessageComposer<ConstructorParameters<typeof RenderRoomMessageComposer>>

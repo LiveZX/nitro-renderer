@@ -1,17 +1,9 @@
+import { ConfigurationEvent, EventDispatcher, IEventDispatcher, ILinkEventTracker, INitroCore, IWorkerEventTracker, NitroEvent } from '@nitrots/api';
 import { Application, IApplicationOptions } from '@pixi/app';
 import { SCALE_MODES } from '@pixi/constants';
 import { settings } from '@pixi/settings';
 import { Ticker } from '@pixi/ticker';
-import { INitroManager } from '../core';
-import { ConfigurationEvent } from '../core/configuration/ConfigurationEvent';
-import { EventDispatcher } from '../core/events/EventDispatcher';
-import { IEventDispatcher } from '../core/events/IEventDispatcher';
-import { ILinkEventTracker } from '../core/events/ILinkEventTracker';
-import { IWorkerEventTracker } from '../core/events/IWorkerEventTracker';
-import { NitroEvent } from '../core/events/NitroEvent';
-import { INitroCore } from '../core/INitroCore';
 import { NitroCore } from '../core/NitroCore';
-import { NitroTimer } from '../core/utils/NitroTimer';
 import { IRoomManager } from '../room/IRoomManager';
 import { RoomManager } from '../room/RoomManager';
 import { AvatarRenderManager } from './avatar/AvatarRenderManager';
@@ -50,7 +42,6 @@ export class Nitro extends Application implements INitro
 
     private static INSTANCE: INitro = null;
 
-    private _nitroTimer: NitroTimer;
     private _worker: Worker;
     private _core: INitroCore;
     private _events: IEventDispatcher;
@@ -62,7 +53,7 @@ export class Nitro extends Application implements INitro
     private _roomSessionManager: IRoomSessionManager;
     private _roomManager: IRoomManager;
     private _cameraManager: IRoomCameraWidgetManager;
-    private _soundManager: INitroManager;
+    private _soundManager: ISoundManager;
     private _linkTrackers: ILinkEventTracker[];
     private _workerTrackers: IWorkerEventTracker[];
 
@@ -75,7 +66,6 @@ export class Nitro extends Application implements INitro
 
         if(!Nitro.INSTANCE) Nitro.INSTANCE = this;
 
-        this._nitroTimer = new NitroTimer();
         this._worker = null;
         this._core = core;
         this._events = new EventDispatcher();
@@ -99,7 +89,6 @@ export class Nitro extends Application implements INitro
 
         if(this._worker) this._worker.onmessage = this.createWorkerEvent.bind(this);
     }
-    soundManager: ISoundManager;
 
     public static bootstrap(): void
     {
@@ -340,11 +329,6 @@ export class Nitro extends Application implements INitro
         this._worker.onmessage = this.createWorkerEvent.bind(this);
     }
 
-    public get nitroTimer(): NitroTimer
-    {
-        return this._nitroTimer;
-    }
-
     public get core(): INitroCore
     {
         return this._core;
@@ -393,6 +377,11 @@ export class Nitro extends Application implements INitro
     public get cameraManager(): IRoomCameraWidgetManager
     {
         return this._cameraManager;
+    }
+
+    public get soundManager(): ISoundManager
+    {
+        return this._soundManager;
     }
 
     public get width(): number

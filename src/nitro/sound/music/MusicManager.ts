@@ -1,5 +1,4 @@
-import { NitroManager } from '../../../core/common/NitroManager';
-import { NitroEvent } from '../../../core/events/NitroEvent';
+import { NitroEvent, NitroManager } from '@nitrots/api';
 import { JukeboxPlayListFullMessageEvent } from '../../communication/messages/incoming/sound/JukeboxPlayListFullMessageEvent';
 import { JukeboxSongDisksMessageEvent } from '../../communication/messages/incoming/sound/JukeboxSongDisksMessageEvent';
 import { NowPlayingMessageEvent } from '../../communication/messages/incoming/sound/NowPlayingMessageEvent';

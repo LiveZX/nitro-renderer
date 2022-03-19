@@ -1,4 +1,4 @@
-import { IMessageComposer } from '../../../../../../core/communication/messages/IMessageComposer';
+import { IMessageComposer } from '@nitrots/api';
 import { RoomObjectCategory } from '../../../../../room/object/RoomObjectCategory';
 
 export class FurniturePlaceComposer implements IMessageComposer<string[]>

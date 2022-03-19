@@ -1,6 +1,5 @@
-﻿import { Graphics } from '@pixi/graphics';
-import { IDisposable } from '../../../../../../../core/common/disposable/IDisposable';
-import { IGraphicAssetCollection } from '../../../../../../../room/object/visualization/utils/IGraphicAssetCollection';
+﻿import { IDisposable, IGraphicAssetCollection } from '@nitrots/api';
+import { Graphics } from '@pixi/graphics';
 import { IRoomGeometry } from '../../../../../../../room/utils/IRoomGeometry';
 import { IVector3D } from '../../../../../../../room/utils/IVector3D';
 import { Vector3d } from '../../../../../../../room/utils/Vector3d';

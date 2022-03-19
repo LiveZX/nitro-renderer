@@ -1,4 +1,4 @@
-import { IDisposable } from '../../core/common/disposable/IDisposable';
+import { IDisposable } from '@nitrots/api';
 
 export interface IAvatarImageListener extends IDisposable
 {

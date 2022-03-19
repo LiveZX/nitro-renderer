@@ -1,7 +1,4 @@
-import { IMessageComposer } from './IMessageComposer';
-import { IMessageConfiguration } from './IMessageConfiguration';
-import { IMessageEvent } from './IMessageEvent';
-import { MessageEvent } from './MessageEvent';
+import { IMessageComposer, IMessageConfiguration, IMessageEvent } from '@nitrots/api';
 
 export class MessageClassManager
 {

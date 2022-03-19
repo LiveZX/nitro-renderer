@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { LoveLockFurniStartParser } from '../../../parser/room/furniture/LoveLockFurniStartParser';
 
 export class LoveLockFurniStartEvent extends MessageEvent implements IMessageEvent

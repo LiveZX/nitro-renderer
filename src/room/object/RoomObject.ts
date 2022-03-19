@@ -1,4 +1,4 @@
-import { Disposable } from '../../core/common/disposable/Disposable';
+import { Disposable } from '@nitrots/api';
 import { RoomObjectUpdateMessage } from '../messages/RoomObjectUpdateMessage';
 import { IVector3D } from '../utils/IVector3D';
 import { Vector3d } from '../utils/Vector3d';

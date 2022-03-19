@@ -1,4 +1,4 @@
-import { Disposable } from '../core/common/disposable/Disposable';
+import { Disposable } from '@nitrots/api';
 import { IRoomInstance } from './IRoomInstance';
 import { IRoomInstanceContainer } from './IRoomInstanceContainer';
 import { IRoomObjectManager } from './IRoomObjectManager';

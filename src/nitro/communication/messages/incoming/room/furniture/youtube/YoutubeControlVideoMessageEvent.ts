@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { YoutubeControlVideoMessageParser } from '../../../../parser/room/furniture/youtube/YoutubeControlVideoMessageParser';
 
 export class YoutubeControlVideoMessageEvent extends MessageEvent implements IMessageEvent

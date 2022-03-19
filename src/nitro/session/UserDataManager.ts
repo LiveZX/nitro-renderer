@@ -1,5 +1,4 @@
-import { Disposable } from '../../core/common/disposable/Disposable';
-import { IConnection } from '../../core/communication/connections/IConnection';
+import { Disposable, IConnection } from '@nitrots/api';
 import { RequestPetInfoComposer } from '../communication/messages/outgoing/pet/RequestPetInfoComposer';
 import { UserCurrentBadgesComposer } from '../communication/messages/outgoing/user/data/UserCurrentBadgesComposer';
 import { RoomUserData } from './RoomUserData';

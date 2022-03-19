@@ -1,7 +1,6 @@
-import { IAssetData } from '../../../../../core/asset/interfaces';
-import { Disposable } from '../../../../../core/common/disposable/Disposable';
+import { Disposable, IAssetData } from '@nitrots/api';
+import { IGraphicAssetCollection } from '../../../../../api/asset/utils/IGraphicAssetCollection';
 import { IObjectVisualizationData } from '../../../../../room/object/visualization/IRoomObjectVisualizationData';
-import { IGraphicAssetCollection } from '../../../../../room/object/visualization/utils/IGraphicAssetCollection';
 import { PlaneMaskManager } from './mask/PlaneMaskManager';
 import { LandscapeRasterizer } from './rasterizer/animated/LandscapeRasterizer';
 import { FloorRasterizer } from './rasterizer/basic/FloorRasterizer';

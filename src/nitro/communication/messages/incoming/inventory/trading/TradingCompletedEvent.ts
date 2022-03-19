@@ -1,5 +1,4 @@
-﻿import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+﻿import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { TradingCompletedParser } from '../../../parser/inventory/trading/TradingCompletedParser';
 
 export class TradingCompletedEvent extends MessageEvent implements IMessageEvent

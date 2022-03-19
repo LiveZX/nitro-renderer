@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { PendingGuideTicketData } from './common/PendingGuideTicketData';
 
 export class GuideReportingStatusMessageParser implements IMessageParser

@@ -1,8 +1,7 @@
-﻿import { Resource, Texture } from '@pixi/core';
+﻿import { IGraphicAsset, IGraphicAssetCollection } from '@nitrots/api';
+import { Resource, Texture } from '@pixi/core';
 import { Graphics } from '@pixi/graphics';
 import { Point } from '@pixi/math';
-import { IGraphicAsset } from '../../../../../../../room/object/visualization/utils/IGraphicAsset';
-import { IGraphicAssetCollection } from '../../../../../../../room/object/visualization/utils/IGraphicAssetCollection';
 import { IRoomGeometry } from '../../../../../../../room/utils/IRoomGeometry';
 import { IVector3D } from '../../../../../../../room/utils/IVector3D';
 import { Rasterizer } from '../../../../../../../room/utils/Rasterizer';

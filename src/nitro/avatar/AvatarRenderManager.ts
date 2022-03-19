@@ -1,8 +1,4 @@
-import { NitroLogger } from '../../core';
-import { IAssetManager } from '../../core/asset/IAssetManager';
-import { NitroManager } from '../../core/common/NitroManager';
-import { NitroEvent } from '../../core/events/NitroEvent';
-import { IGraphicAsset } from '../../room/object/visualization/utils/IGraphicAsset';
+import { IAssetManager, IGraphicAsset, NitroEvent, NitroLogger, NitroManager } from '@nitrots/api';
 import { Nitro } from '../Nitro';
 import { FigureDataContainer } from '../utils/FigureDataContainer';
 import { AssetAliasCollection } from './alias/AssetAliasCollection';

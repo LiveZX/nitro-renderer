@@ -1,4 +1,4 @@
-import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
+import { IMessageDataWrapper } from '@nitrots/api';
 import { IMessageParser } from '../../../../../core/communication/messages/IMessageParser';
 import { PollChoice } from './PollChoice';
 import { PollQuestion } from './PollQuestion';

@@ -1,6 +1,5 @@
-import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
-import { RoomFowardParser as RoomForwardParser } from '../../../parser/room/access/RoomFowardParser';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
+import { RoomForwardParser } from '../../../parser/room/access/RoomForwardParser';
 
 export class RoomForwardEvent extends MessageEvent implements IMessageEvent
 {

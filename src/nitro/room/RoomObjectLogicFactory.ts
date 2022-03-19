@@ -1,6 +1,4 @@
-import { NitroLogger } from '../../core/common/logger/NitroLogger';
-import { EventDispatcher } from '../../core/events/EventDispatcher';
-import { IEventDispatcher } from '../../core/events/IEventDispatcher';
+import { EventDispatcher, IEventDispatcher, NitroLogger } from '@nitrots/api';
 import { IRoomObjectEventHandler } from '../../room/object/logic/IRoomObjectEventHandler';
 import { IRoomObjectLogicFactory } from '../../room/object/logic/IRoomObjectLogicFactory';
 import { RoomObjectLogicBase } from '../../room/object/logic/RoomObjectLogicBase';

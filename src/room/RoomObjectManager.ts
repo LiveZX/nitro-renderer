@@ -1,4 +1,4 @@
-import { AdvancedMap } from '../core/utils/AdvancedMap';
+import { AdvancedMap } from '@nitrots/api';
 import { IRoomObjectManager } from './IRoomObjectManager';
 import { IRoomObjectController } from './object/IRoomObjectController';
 import { RoomObject } from './object/RoomObject';

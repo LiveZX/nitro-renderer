@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { NavigatorSearchResultSet } from './utils/NavigatorSearchResultSet';
 
 export class NavigatorSearchParser implements IMessageParser

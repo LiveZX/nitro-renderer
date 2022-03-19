@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { GenericErrorEvent } from '../../communication/messages/incoming/generic/GenericErrorEvent';
 import { GenericErrorEnum } from '../enum/GenericErrorEnum';
 import { RoomSessionErrorMessageEvent } from '../events/RoomSessionErrorMessageEvent';

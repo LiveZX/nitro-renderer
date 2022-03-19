@@ -1,15 +1,7 @@
+import { Disposable, GraphicAssetCollection, IAssetData, IAssetManager, IGraphicAsset, IGraphicAssetCollection, INitroLogger, NitroBundle, NitroLogger } from '@nitrots/api';
 import { Resource, Texture } from '@pixi/core';
 import { Loader, LoaderResource } from '@pixi/loaders';
 import { Spritesheet } from '@pixi/spritesheet';
-import { IGraphicAsset } from '../../room';
-import { GraphicAssetCollection } from '../../room/object/visualization/utils/GraphicAssetCollection';
-import { IGraphicAssetCollection } from '../../room/object/visualization/utils/IGraphicAssetCollection';
-import { Disposable } from '../common/disposable/Disposable';
-import { INitroLogger } from '../common/logger/INitroLogger';
-import { NitroLogger } from '../common/logger/NitroLogger';
-import { IAssetManager } from './IAssetManager';
-import { IAssetData } from './interfaces';
-import { NitroBundle } from './NitroBundle';
 
 export class AssetManager extends Disposable implements IAssetManager
 {
@@ -24,11 +16,6 @@ export class AssetManager extends Disposable implements IAssetManager
         this._logger = new NitroLogger(this.constructor.name);
         this._textures = new Map();
         this._collections = new Map();
-    }
-
-    public static removeFileExtension(name: string): string
-    {
-        return (name.substring(0, name.lastIndexOf('.')) || name);
     }
 
     public getTexture(name: string): Texture<Resource>

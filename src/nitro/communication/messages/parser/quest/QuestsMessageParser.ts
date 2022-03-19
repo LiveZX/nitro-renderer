@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { QuestMessageData } from '../../incoming/quest/QuestMessageData';
 
 export class QuestsMessageParser implements IMessageParser

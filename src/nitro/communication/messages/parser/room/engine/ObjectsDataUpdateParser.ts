@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { ObjectData } from '../../../incoming/room/engine/ObjectData';
 import { FurnitureDataParser } from '../furniture/FurnitureDataParser';
 

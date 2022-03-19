@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { InClientLinkParser } from '../../parser/user/InClientLinkParser';
 
 export class InClientLinkEvent extends MessageEvent implements IMessageEvent

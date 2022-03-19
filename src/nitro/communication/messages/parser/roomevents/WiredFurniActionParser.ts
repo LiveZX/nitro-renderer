@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { WiredActionDefinition } from '../../incoming/roomevents/WiredActionDefinition';
 
 export class WiredFurniActionParser implements IMessageParser

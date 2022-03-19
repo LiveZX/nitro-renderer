@@ -1,5 +1,4 @@
-import { Disposable } from '../../../core/common/disposable/Disposable';
-import { IEventDispatcher } from '../../../core/events/IEventDispatcher';
+import { Disposable, IEventDispatcher } from '@nitrots/api';
 import { RoomSpriteMouseEvent } from '../../events/RoomSpriteMouseEvent';
 import { RoomObjectUpdateMessage } from '../../messages/RoomObjectUpdateMessage';
 import { IRoomGeometry } from '../../utils/IRoomGeometry';

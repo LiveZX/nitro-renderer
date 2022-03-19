@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { NotificationDialogMessageParser } from '../../parser/notifications/NotificationDialogMessageParser';
 
 export class NotificationDialogMessageEvent extends MessageEvent implements IMessageEvent

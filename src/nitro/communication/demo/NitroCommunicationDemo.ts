@@ -1,7 +1,4 @@
-import { NitroLogger } from '../../../core/common/logger/NitroLogger';
-import { NitroManager } from '../../../core/common/NitroManager';
-import { IConnection } from '../../../core/communication/connections/IConnection';
-import { SocketConnectionEvent } from '../../../core/communication/events/SocketConnectionEvent';
+import { IConnection, NitroLogger, NitroManager, SocketConnectionEvent } from '@nitrots/api';
 import { Nitro } from '../../Nitro';
 import { INitroCommunicationManager } from '../INitroCommunicationManager';
 import { ClientPingEvent } from '../messages/incoming/client/ClientPingEvent';

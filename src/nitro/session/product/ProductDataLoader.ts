@@ -1,5 +1,4 @@
-﻿import { EventDispatcher } from '../../../core/events/EventDispatcher';
-import { NitroEvent } from '../../../core/events/NitroEvent';
+﻿import { EventDispatcher, NitroEvent } from '@nitrots/api';
 import { IProductData } from './IProductData';
 import { ProductData } from './ProductData';
 

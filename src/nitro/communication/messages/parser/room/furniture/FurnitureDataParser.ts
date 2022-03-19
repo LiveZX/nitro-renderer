@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { IObjectData } from '../../../../../room/object/data/IObjectData';
 import { ObjectDataFactory } from '../../../../../room/object/data/ObjectDataFactory';
 

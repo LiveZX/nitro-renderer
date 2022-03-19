@@ -6,11 +6,13 @@
     "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
     "editor.codeActionsOnSave": {
         "source.fixAll": true,
-        "source.organizeImports": true,
+        "source.fixAll.sortJSON": false,
+        "source.organizeImports": true
     },
-    "emmet.showExpandedAbbreviation": "never",
 	"git.ignoreLimitWarning": true,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
+    "files.trimFinalNewlines": true,
+    "editor.wordWrap": "on",
+    "emmet.showExpandedAbbreviation": "never"
 }

@@ -1,5 +1,4 @@
-import { IDisposable } from '../../../../../core/common/disposable/IDisposable';
-import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
+import { IDisposable, IMessageDataWrapper } from '@nitrots/api';
 import { ModRoomData } from './ModRoomData';
 
 export class RoomModerationData implements IDisposable

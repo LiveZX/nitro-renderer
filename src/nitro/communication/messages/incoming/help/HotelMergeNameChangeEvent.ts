@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { HotelMergeNameChangeParser } from '../../parser/help/HotelMergeNameChangeParser';
 
 export class HotelMergeNameChangeEvent extends MessageEvent implements IMessageEvent

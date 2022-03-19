@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { Vector3d } from '../../../../../../room/utils/Vector3d';
 import { ObjectRolling } from '../../../../../room/utils/ObjectRolling';
 

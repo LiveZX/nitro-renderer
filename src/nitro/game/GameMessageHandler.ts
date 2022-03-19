@@ -1,4 +1,4 @@
-import { IConnection } from '../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { LoadGameUrlEvent } from '../communication/messages/incoming/game/LoadGameUrlEvent';
 import { LegacyExternalInterface } from '../externalInterface/LegacyExternalInterface';
 

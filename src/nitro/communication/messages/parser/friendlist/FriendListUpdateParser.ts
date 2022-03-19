@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { FriendCategoryData } from '../../incoming/friendlist/FriendCategoryData';
 import { FriendParser } from '../../incoming/friendlist/FriendParser';
 

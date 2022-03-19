@@ -1,7 +1,5 @@
+import { IMessageComposer, NitroEvent, NitroManager } from '@nitrots/api';
 import { Resource, Texture } from '@pixi/core';
-import { NitroManager } from '../../core/common/NitroManager';
-import { IMessageComposer } from '../../core/communication/messages/IMessageComposer';
-import { NitroEvent } from '../../core/events/NitroEvent';
 import { FigureUpdateEvent, MysteryBoxKeysEvent } from '../communication';
 import { INitroCommunicationManager } from '../communication/INitroCommunicationManager';
 import { AvailabilityStatusMessageEvent } from '../communication/messages/incoming/availability/AvailabilityStatusMessageEvent';

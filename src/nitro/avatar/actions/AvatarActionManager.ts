@@ -1,4 +1,4 @@
-import { IAssetManager } from '../../../core/asset/IAssetManager';
+import { IAssetManager } from '@nitrots/api';
 import { ActionDefinition } from './ActionDefinition';
 import { IActiveActionData } from './IActiveActionData';
 

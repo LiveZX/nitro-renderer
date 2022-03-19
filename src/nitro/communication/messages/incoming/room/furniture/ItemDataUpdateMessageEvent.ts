@@ -1,6 +1,6 @@
-import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { ItemDataUpdateMessageParser } from '../../../parser/room/furniture/ItemDataUpdateMessageParser';
+
 
 export class ItemDataUpdateMessageEvent extends MessageEvent implements IMessageEvent
 {

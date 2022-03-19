@@ -1,12 +1,11 @@
+import { NitroContainer, NitroSprite, PaletteMapFilter } from '@nitrots/api';
 import { RenderTexture, Texture } from '@pixi/core';
 import { Container } from '@pixi/display';
 import { ColorMatrixFilter } from '@pixi/filter-color-matrix';
 import { Rectangle } from '@pixi/math';
 import { Sprite } from '@pixi/sprite';
-import { NitroContainer, NitroSprite } from '../../core';
-import { AdvancedMap } from '../../core/utils/AdvancedMap';
-import { PaletteMapFilter } from '../../core/utils/PaletteMapFilter';
-import { IGraphicAsset } from '../../room/object/visualization/utils/IGraphicAsset';
+import { IGraphicAsset } from '../../api/asset/utils/IGraphicAsset';
+import { AdvancedMap } from '../../api/utils/AdvancedMap';
 import { TextureUtils } from '../../room/utils/TextureUtils';
 import { Nitro } from '../Nitro';
 import { ActiveActionData } from './actions/ActiveActionData';

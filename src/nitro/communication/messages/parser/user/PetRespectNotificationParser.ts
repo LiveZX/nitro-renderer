@@ -1,6 +1,6 @@
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { PetData } from '..';
 import { PetType } from '../../../..';
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
 
 export class PetRespectNotificationParser implements IMessageParser
 {

@@ -1,7 +1,6 @@
+import { IGraphicAsset, NitroRectangle, NitroSprite } from '@nitrots/api';
 import { Resource, Texture } from '@pixi/core';
 import { Matrix } from '@pixi/math';
-import { NitroRectangle, NitroSprite } from '../../../../../core';
-import { IGraphicAsset } from '../../../../../room/object/visualization/utils/IGraphicAsset';
 import { TextureUtils } from '../../../../../room/utils/TextureUtils';
 import { FurnitureAnimatedVisualization } from './FurnitureAnimatedVisualization';
 

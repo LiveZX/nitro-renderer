@@ -1,4 +1,4 @@
-import { IMessageComposer } from '../../../../../../core/communication/messages/IMessageComposer';
+import { IMessageComposer } from '@nitrots/api';
 
 export class RoomUsersWithRightsComposer implements IMessageComposer<ConstructorParameters<typeof RoomUsersWithRightsComposer>>
 {

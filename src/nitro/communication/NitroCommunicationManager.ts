@@ -1,11 +1,4 @@
-import { IMessageEvent } from '../../core';
-import { NitroManager } from '../../core/common/NitroManager';
-import { IConnection } from '../../core/communication/connections/IConnection';
-import { IConnectionStateListener } from '../../core/communication/connections/IConnectionStateListener';
-import { SocketConnectionEvent } from '../../core/communication/events/SocketConnectionEvent';
-import { ICommunicationManager } from '../../core/communication/ICommunicationManager';
-import { IMessageConfiguration } from '../../core/communication/messages/IMessageConfiguration';
-import { NitroEvent } from '../../core/events/NitroEvent';
+import { ICommunicationManager, IConnection, IConnectionStateListener, IMessageConfiguration, IMessageEvent, NitroEvent, NitroManager, SocketConnectionEvent } from '@nitrots/api';
 import { Nitro } from '../Nitro';
 import { NitroCommunicationDemo } from './demo/NitroCommunicationDemo';
 import { NitroCommunicationDemoEvent } from './demo/NitroCommunicationDemoEvent';

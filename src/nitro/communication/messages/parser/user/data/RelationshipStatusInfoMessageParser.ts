@@ -1,5 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../core';
-import { AdvancedMap } from '../../../../../../core/utils/AdvancedMap';
+import { AdvancedMap, IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { RelationshipStatusInfo } from './RelationshipStatusInfo';
 
 export class RelationshipStatusInfoMessageParser implements IMessageParser

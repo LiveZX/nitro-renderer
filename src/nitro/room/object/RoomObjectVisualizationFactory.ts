@@ -1,5 +1,4 @@
-import { IAssetData } from '../../../core/asset/interfaces';
-import { NitroLogger } from '../../../core/common/logger/NitroLogger';
+import { IAssetData, NitroLogger } from '@nitrots/api';
 import { IRoomObjectGraphicVisualization } from '../../../room/object/visualization/IRoomObjectGraphicVisualization';
 import { IObjectVisualizationData } from '../../../room/object/visualization/IRoomObjectVisualizationData';
 import { IRoomObjectVisualizationFactory } from '../../../room/object/visualization/IRoomObjectVisualizationFactory';

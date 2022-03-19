@@ -1,15 +1,9 @@
-import { IConnection } from '../../connections/IConnection';
-import { IMessageDataWrapper } from '../../messages/IMessageDataWrapper';
-import { BinaryReader } from '../BinaryReader';
-import { BinaryWriter } from '../BinaryWriter';
-import { Byte } from '../Byte';
-import { ICodec } from '../ICodec';
-import { Short } from '../Short';
-import { EvaWireDataWrapper } from './EvaWireDataWrapper';
+import { BinaryReader, BinaryWriter, Byte, IBinaryWriter, ICodec, IConnection, IMessageDataWrapper, Short } from '@nitrots/api';
+import { EvaWireDataWrapper } from '.';
 
 export class EvaWireFormat implements ICodec
 {
-    public encode(header: number, messages: any[]): BinaryWriter
+    public encode(header: number, messages: any[]): IBinaryWriter
     {
         const writer = new BinaryWriter();
 

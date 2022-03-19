@@ -1,7 +1,5 @@
+import { EventDispatcher, IAssetAnimation, IAssetManager } from '@nitrots/api';
 import { Point } from '@pixi/math';
-import { IAssetManager } from '../../core/asset/IAssetManager';
-import { IAssetAnimation } from '../../core/asset/interfaces';
-import { EventDispatcher } from '../../core/events/EventDispatcher';
 import { ActionDefinition } from './actions/ActionDefinition';
 import { AvatarActionManager } from './actions/AvatarActionManager';
 import { IActionDefinition } from './actions/IActionDefinition';

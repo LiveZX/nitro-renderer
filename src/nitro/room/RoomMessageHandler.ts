@@ -1,5 +1,4 @@
-import { Disposable } from '../../core/common/disposable/Disposable';
-import { IConnection } from '../../core/communication/connections/IConnection';
+import { Disposable, IConnection } from '@nitrots/api';
 import { IVector3D } from '../../room/utils/IVector3D';
 import { Vector3d } from '../../room/utils/Vector3d';
 import { AvatarGuideStatus } from '../avatar/enum/AvatarGuideStatus';

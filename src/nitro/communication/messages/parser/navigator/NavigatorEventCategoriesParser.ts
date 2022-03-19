@@ -1,4 +1,4 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '@nitrots/api';
 import { NavigatorEventCategoryDataParser } from './NavigatorEventCategoryDataParser';
 
 export class NavigatorEventCategoriesParser implements IMessageParser

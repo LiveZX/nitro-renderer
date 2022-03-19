@@ -1,4 +1,4 @@
-import { IConnection } from '../../../core/communication/connections/IConnection';
+import { IConnection } from '@nitrots/api';
 import { GetGuestRoomResultEvent } from '../../communication/messages/incoming/room/data/GetGuestRoomResultEvent';
 import { RoomSessionEvent } from '../events/RoomSessionEvent';
 import { RoomSessionPropertyUpdateEvent } from '../events/RoomSessionPropertyUpdateEvent';

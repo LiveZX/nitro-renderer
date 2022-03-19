@@ -1,21 +1,10 @@
-import { Nitro } from '../../../nitro/Nitro';
-import { NitroLogger } from '../../common/logger/NitroLogger';
-import { EventDispatcher } from '../../events/EventDispatcher';
-import { EvaWireFormat } from '../codec/evawire/EvaWireFormat';
-import { ICodec } from '../codec/ICodec';
-import { SocketConnectionEvent } from '../events/SocketConnectionEvent';
-import { ICommunicationManager } from '../ICommunicationManager';
-import { IMessageComposer } from '../messages/IMessageComposer';
-import { IMessageConfiguration } from '../messages/IMessageConfiguration';
-import { IMessageDataWrapper } from '../messages/IMessageDataWrapper';
-import { IMessageEvent } from '../messages/IMessageEvent';
-import { MessageClassManager } from '../messages/MessageClassManager';
-import { WebSocketEventEnum } from './enums/WebSocketEventEnum';
-import { IConnection } from './IConnection';
-import { IConnectionStateListener } from './IConnectionStateListener';
+import { EventDispatcher, ICodec, ICommunicationManager, IConnection, IConnectionStateListener, IMessageComposer, IMessageConfiguration, IMessageDataWrapper, IMessageEvent, NitroLogger, SocketConnectionEvent, WebSocketEventEnum } from '@nitrots/api';
+import { EvaWireFormat, MessageClassManager } from '..';
 
 export class SocketConnection extends EventDispatcher implements IConnection
 {
+    public static PACKET_LOG_ENABLED: boolean = false;
+
     private _communicationManager: ICommunicationManager;
     private _stateListener: IConnectionStateListener;
     private _socket: WebSocket;
@@ -194,12 +183,12 @@ export class SocketConnection extends EventDispatcher implements IConnection
 
             if(!encoded)
             {
-                if(Nitro.instance.getConfiguration<boolean>('system.packet.log')) console.log(`Encoding Failed: ${ composer.constructor.name }`);
+                if(SocketConnection.PACKET_LOG_ENABLED) console.log(`Encoding Failed: ${ composer.constructor.name }`);
 
                 continue;
             }
 
-            if(Nitro.instance.getConfiguration<boolean>('system.packet.log')) console.log(`OutgoingComposer: [${ header }] ${ composer.constructor.name }`, message);
+            if(SocketConnection.PACKET_LOG_ENABLED) console.log(`OutgoingComposer: [${ header }] ${ composer.constructor.name }`, message);
 
             this.write(encoded.getBuffer());
         }
@@ -257,7 +246,7 @@ export class SocketConnection extends EventDispatcher implements IConnection
 
             if(!messages || !messages.length) continue;
 
-            if(Nitro.instance.getConfiguration<boolean>('system.packet.log'))
+            if(SocketConnection.PACKET_LOG_ENABLED)
             {
                 console.log(`IncomingMessage: [${ wrapper.header }] ${ messages[0].constructor.name }`, messages[0].parser);
             }
@@ -291,7 +280,7 @@ export class SocketConnection extends EventDispatcher implements IConnection
 
         if(!events || !events.length)
         {
-            if(Nitro.instance.getConfiguration<boolean>('system.packet.log'))
+            if(SocketConnection.PACKET_LOG_ENABLED)
             {
                 console.log(`IncomingMessage: [${ wrapper.header }] UNREGISTERED`, wrapper);
             }

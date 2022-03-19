@@ -1,4 +1,4 @@
-import { NitroManager } from '../core/common/NitroManager';
+import { IGraphicAssetCollection, NitroManager } from '@nitrots/api';
 import { RoomContentLoader } from '../nitro/room/RoomContentLoader';
 import { RoomContentLoadedEvent } from './events/RoomContentLoadedEvent';
 import { IRoomInstance } from './IRoomInstance';
@@ -10,7 +10,6 @@ import { IRoomObject } from './object/IRoomObject';
 import { IRoomObjectController } from './object/IRoomObjectController';
 import { IRoomObjectLogicFactory } from './object/logic/IRoomObjectLogicFactory';
 import { IRoomObjectVisualizationFactory } from './object/visualization/IRoomObjectVisualizationFactory';
-import { IGraphicAssetCollection } from './object/visualization/utils/IGraphicAssetCollection';
 import { RoomInstance } from './RoomInstance';
 import { RoomObjectManager } from './RoomObjectManager';
 

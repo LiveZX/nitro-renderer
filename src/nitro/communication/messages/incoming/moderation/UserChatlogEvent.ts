@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { UserChatlogMessageParser } from '../../parser/moderation/UserChatlogMessageParser';
 
 export class UserChatlogEvent extends MessageEvent implements IMessageEvent

@@ -1,4 +1,4 @@
-﻿import { IGraphicAsset } from '../../../../../../room/object/visualization/utils/IGraphicAsset';
+﻿import { IGraphicAsset } from '@nitrots/api';
 
 export class PlaneMaskBitmap
 {

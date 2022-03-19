@@ -1,4 +1,4 @@
-﻿import { NitroEvent } from '../../../core/events/NitroEvent';
+﻿import { NitroEvent } from '@nitrots/api';
 
 export class UserNameUpdateEvent extends NitroEvent
 {

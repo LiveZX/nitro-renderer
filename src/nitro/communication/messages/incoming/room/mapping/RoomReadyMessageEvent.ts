@@ -1,5 +1,4 @@
-import { IMessageEvent } from '../../../../../../core/communication/messages/IMessageEvent';
-import { MessageEvent } from '../../../../../../core/communication/messages/MessageEvent';
+import { IMessageEvent, MessageEvent } from '@nitrots/api';
 import { RoomReadyMessageParser } from '../../../parser/room/mapping/RoomReadyMessageParser';
 
 export class RoomReadyMessageEvent extends MessageEvent implements IMessageEvent
