@@ -1,6 +1,6 @@
-import { IMessageComposer } from '../../../../../../core/communication/messages/IMessageComposer';
+import { IMessageComposer } from '../../../../../core/communication/messages/IMessageComposer';
 
-export class RoomInfoComposer implements IMessageComposer<[ number, number, number ]>
+export class GetGuestRoomMessageComposer implements IMessageComposer<[ number, number, number ]>
 {
     private _data: [ number, number, number ];
 

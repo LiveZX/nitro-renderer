@@ -1,8 +1,8 @@
 import { IMessageComposer } from '../../../../../core/communication/messages/IMessageComposer';
 
-export class RoomCreateComposer implements IMessageComposer<ConstructorParameters<typeof RoomCreateComposer>>
+export class CreateFlatMessageComposer implements IMessageComposer<ConstructorParameters<typeof CreateFlatMessageComposer>>
 {
-    private _data: ConstructorParameters<typeof RoomCreateComposer>;
+    private _data: ConstructorParameters<typeof CreateFlatMessageComposer>;
 
     constructor(roomName: string, roomDesc: string, modelName: string, categoryId: number, maxVisitors: number, tradeType: number)
     {

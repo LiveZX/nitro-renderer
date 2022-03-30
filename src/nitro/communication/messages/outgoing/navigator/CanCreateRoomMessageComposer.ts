@@ -1,8 +1,8 @@
 import { IMessageComposer } from '../../../../../core/communication/messages/IMessageComposer';
 
-export class NavigatorSettingsComposer implements IMessageComposer<ConstructorParameters<typeof NavigatorSettingsComposer>>
+export class CanCreateRoomMessageComposer implements IMessageComposer<ConstructorParameters<typeof CanCreateRoomMessageComposer>>
 {
-    private _data: ConstructorParameters<typeof NavigatorSettingsComposer>;
+    private _data: ConstructorParameters<typeof CanCreateRoomMessageComposer>;
 
     constructor()
     {
