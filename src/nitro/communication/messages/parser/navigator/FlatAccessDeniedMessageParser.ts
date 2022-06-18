@@ -1,6 +1,6 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../../core';
+import { IMessageDataWrapper, IMessageParser } from '../../../../../core';
 
-export class RoomDoorbellParser implements IMessageParser
+export class FlatAccessDeniedMessageParser implements IMessageParser
 {
     private _userName: string;
 

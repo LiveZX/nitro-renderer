@@ -1,10 +1,10 @@
-import { IMessageParser } from '../../../../../../././core/communication/messages/IMessageParser';
-import { IMessageDataWrapper } from '../../../../../../core/communication/messages/IMessageDataWrapper';
-import { RoomChatSettings } from './RoomChatSettings';
-import { RoomDataParser } from './RoomDataParser';
-import { RoomModerationSettings } from './RoomModerationSettings';
+import { IMessageParser } from '../../../../../././core/communication/messages/IMessageParser';
+import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
+import { RoomChatSettings } from '../room/data/RoomChatSettings';
+import { RoomDataParser } from '../room/data/RoomDataParser';
+import { RoomModerationSettings } from '../room/data/RoomModerationSettings';
 
-export class RoomInfoParser implements IMessageParser
+export class GetGuestRoomResultMessageParser implements IMessageParser
 {
     private _roomEnter: boolean;
     private _roomForward: boolean;

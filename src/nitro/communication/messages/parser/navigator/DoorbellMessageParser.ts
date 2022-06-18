@@ -1,6 +1,7 @@
-import { IMessageDataWrapper, IMessageParser } from '../../../../../../../core';
+import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
+import { IMessageParser } from '../../../../../core/communication/messages/IMessageParser';
 
-export class RoomDoorbellRejectedParser implements IMessageParser
+export class DoorbellMessageParser implements IMessageParser
 {
     private _userName: string;
 

@@ -2,7 +2,6 @@ export * from './RoomChatSettings';
 export * from './RoomChatSettingsParser';
 export * from './RoomDataParser';
 export * from './RoomEntryInfoMessageParser';
-export * from './RoomInfoParser';
 export * from './RoomModerationSettings';
 export * from './RoomScoreParser';
 export * from './RoomSettingsErrorParser';
