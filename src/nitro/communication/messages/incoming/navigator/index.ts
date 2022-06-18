@@ -20,3 +20,4 @@ export * from './NavigatorOpenRoomCreatorEvent';
 export * from './NavigatorSearchesEvent';
 export * from './NavigatorSearchEvent';
 export * from './NavigatorSettingsEvent';
+export * from './RoomSettingsUpdatedEvent';
