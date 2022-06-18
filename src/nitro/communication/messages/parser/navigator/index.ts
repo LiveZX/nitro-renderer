@@ -23,4 +23,5 @@ export * from './NavigatorOpenRoomCreatorParser';
 export * from './NavigatorSearchesParser';
 export * from './NavigatorSearchParser';
 export * from './NavigatorSettingsParser';
+export * from './RoomSettingsUpdatedParser';
 export * from './utils';

@@ -50,6 +50,7 @@ import { GroupMembersEvent } from './messages/incoming/group/GroupMembersEvent';
 import { GroupPurchasedEvent } from './messages/incoming/group/GroupPurchasedEvent';
 import { GroupSettingsEvent } from './messages/incoming/group/GroupSettingsEvent';
 import { HabboGroupDeactivatedMessageEvent } from './messages/incoming/group/HabboGroupDeactivatedMessageEvent';
+import { ForumDataMessageEvent, ForumsListMessageEvent, GuildForumThreadsEvent, PostMessageMessageEvent, PostThreadMessageEvent, ThreadMessagesMessageEvent, UnreadForumsCountMessageEvent, UpdateMessageMessageEvent, UpdateThreadMessageEvent } from './messages/incoming/groupforums';
 import { NoobnessLevelMessageEvent } from './messages/incoming/handshake/NoobnessLevelMessageEvent';
 import { CallForHelpDisabledNotifyMessageEvent } from './messages/incoming/help/CallForHelpDisabledNotifyMessageEvent';
 import { CallForHelpResultMessageEvent } from './messages/incoming/help/CallForHelpResultMessageEvent';
@@ -108,6 +109,7 @@ import { NavigatorOpenRoomCreatorEvent } from './messages/incoming/navigator/Nav
 import { NavigatorSearchesEvent } from './messages/incoming/navigator/NavigatorSearchesEvent';
 import { NavigatorSearchEvent } from './messages/incoming/navigator/NavigatorSearchEvent';
 import { NavigatorSettingsEvent } from './messages/incoming/navigator/NavigatorSettingsEvent';
+import { RoomSettingsUpdatedEvent } from './messages/incoming/navigator/RoomSettingsUpdatedEvent';
 import { BotErrorEvent } from './messages/incoming/notifications/BotErrorEvent';
 import { HabboBroadcastMessageEvent } from './messages/incoming/notifications/HabboBroadcastMessageEvent';
 import { MOTDNotificationEvent } from './messages/incoming/notifications/MOTDNotificationEvent';
@@ -138,10 +140,6 @@ import { BotCommandConfigurationEvent } from './messages/incoming/room/bots/BotC
 import { RoomChatSettingsEvent } from './messages/incoming/room/data/RoomChatSettingsEvent';
 import { RoomEntryInfoMessageEvent } from './messages/incoming/room/data/RoomEntryInfoMessageEvent';
 import { RoomScoreEvent } from './messages/incoming/room/data/RoomScoreEvent';
-import { RoomSettingsErrorEvent } from './messages/incoming/room/data/RoomSettingsErrorEvent';
-import { RoomSettingsEvent } from './messages/incoming/room/data/RoomSettingsEvent';
-import { RoomSettingsSavedEvent } from './messages/incoming/room/data/RoomSettingsSavedEvent';
-import { RoomSettingsUpdatedEvent } from './messages/incoming/room/data/RoomSettingsUpdatedEvent';
 import { FavoriteMembershipUpdateMessageEvent } from './messages/incoming/room/engine/FavoriteMembershipUpdateMessageEvent';
 import { ObjectsDataUpdateEvent } from './messages/incoming/room/engine/ObjectsDataUpdateEvent';
 import { ObjectsRollingEvent } from './messages/incoming/room/engine/ObjectsRollingEvent';
@@ -180,6 +178,7 @@ import { PetFigureUpdateEvent } from './messages/incoming/room/pet/PetFigureUpda
 import { PetInfoEvent } from './messages/incoming/room/pet/PetInfoEvent';
 import { PetStatusUpdateEvent } from './messages/incoming/room/pet/PetStatusUpdateEvent';
 import { YouArePlayingGameEvent } from './messages/incoming/room/session/YouArePlayingGameEvent';
+import { YouAreSpectatorMessageEvent } from './messages/incoming/room/session/YouAreSpectatorMessageEvent';
 import { FloodControlEvent } from './messages/incoming/room/unit/chat/FloodControlEvent';
 import { RemainingMuteEvent } from './messages/incoming/room/unit/chat/RemainingMuteEvent';
 import { RoomUnitChatEvent } from './messages/incoming/room/unit/chat/RoomUnitChatEvent';
@@ -197,7 +196,6 @@ import { RoomUnitInfoEvent } from './messages/incoming/room/unit/RoomUnitInfoEve
 import { RoomUnitNumberEvent } from './messages/incoming/room/unit/RoomUnitNumberEvent';
 import { RoomUnitRemoveEvent } from './messages/incoming/room/unit/RoomUnitRemoveEvent';
 import { RoomUnitStatusEvent } from './messages/incoming/room/unit/RoomUnitStatusEvent';
-import { RoomMutedEvent } from './messages/incoming/roomevents/RoomMutedEvent';
 import { WiredFurniActionEvent } from './messages/incoming/roomevents/WiredFurniActionEvent';
 import { WiredFurniConditionEvent } from './messages/incoming/roomevents/WiredFurniConditionEvent';
 import { WiredFurniTriggerEvent } from './messages/incoming/roomevents/WiredFurniTriggerEvent';
@@ -209,6 +207,14 @@ import { BannedUsersFromRoomEvent } from './messages/incoming/roomsettings/Banne
 import { FlatControllerAddedEvent } from './messages/incoming/roomsettings/FlatControllerAddedEvent';
 import { FlatControllerRemovedEvent } from './messages/incoming/roomsettings/FlatControllerRemovedEvent';
 import { FlatControllersEvent } from './messages/incoming/roomsettings/FlatControllersEvent';
+import { MuteAllInRoomEvent } from './messages/incoming/roomsettings/MuteAllInRoomEvent';
+import { NoSuchFlatEvent } from './messages/incoming/roomsettings/NoSuchFlatEvent';
+import { RoomSettingsDataEvent } from './messages/incoming/roomsettings/RoomSettingsDataEvent';
+import { RoomSettingsErrorEvent } from './messages/incoming/roomsettings/RoomSettingsErrorEvent';
+import { RoomSettingsSavedEvent } from './messages/incoming/roomsettings/RoomSettingsSavedEvent';
+import { RoomSettingsSaveErrorEvent } from './messages/incoming/roomsettings/RoomSettingsSaveErrorEvent';
+import { ShowEnforceRoomCategoryDialogEvent } from './messages/incoming/roomsettings/ShowEnforceRoomCategoryDialogEvent';
+import { UserUnbannedFromRoomEvent } from './messages/incoming/roomsettings/UserUnbannedFromRoomEvent';
 import { AuthenticatedEvent } from './messages/incoming/security/AuthenticatedEvent';
 import { UserPermissionsEvent } from './messages/incoming/user/access/UserPermissionsEvent';
 import { RelationshipStatusInfoEvent } from './messages/incoming/user/data/RelationshipStatusInfoEvent';
@@ -608,6 +614,17 @@ export class NitroMessages implements IMessageConfiguration
         this._events.set(IncomingHeader.GROUP_BADGES, HabboGroupBadgesMessageEvent);
         this._events.set(IncomingHeader.GROUP_DEACTIVATE, HabboGroupDeactivatedMessageEvent);
 
+        // GROUP FORUMS
+        this._events.set(IncomingHeader.GROUP_FORUM_DATA, ForumDataMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_LIST, ForumsListMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_THREADS, GuildForumThreadsEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_POST, PostMessageMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_POST_THREAD, PostThreadMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_THREAD_MESSAGES, ThreadMessagesMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_UNREAD_COUNT, UnreadForumsCountMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_UPDATE_MESSAGE, UpdateMessageMessageEvent);
+        this._events.set(IncomingHeader.GROUP_FORUM_UPDATE_THREAD, UpdateThreadMessageEvent);
+
         // HELP
         this._events.set(IncomingHeader.CFH_DISABLED_NOTIFY, CallForHelpDisabledNotifyMessageEvent);
         this._events.set(IncomingHeader.CFH_PENDING_CALLS_DELETED, CallForHelpPendingCallsDeletedMessageEvent);
@@ -783,10 +800,6 @@ export class NitroMessages implements IMessageConfiguration
         this._events.set(IncomingHeader.ROOM_SETTINGS_CHAT, RoomChatSettingsEvent);
         this._events.set(IncomingHeader.ROOM_INFO_OWNER, RoomEntryInfoMessageEvent);
         this._events.set(IncomingHeader.ROOM_SCORE, RoomScoreEvent);
-        this._events.set(IncomingHeader.ROOM_SETTINGS_SAVE_ERROR, RoomSettingsErrorEvent);
-        this._events.set(IncomingHeader.ROOM_SETTINGS, RoomSettingsEvent);
-        this._events.set(IncomingHeader.ROOM_SETTINGS_SAVE, RoomSettingsSavedEvent);
-        this._events.set(IncomingHeader.ROOM_SETTINGS_UPDATED, RoomSettingsUpdatedEvent);
         this._events.set(IncomingHeader.ROOM_ROLLING, ObjectsRollingEvent);
         this._events.set(IncomingHeader.FURNITURE_FLOOR_ADD, FurnitureFloorAddEvent);
         this._events.set(IncomingHeader.FURNITURE_FLOOR, FurnitureFloorEvent);
@@ -809,12 +822,24 @@ export class NitroMessages implements IMessageConfiguration
         this._events.set(IncomingHeader.OBJECTS_DATA_UPDATE, ObjectsDataUpdateEvent);
         this._events.set(IncomingHeader.FURNITURE_GROUP_CONTEXT_MENU_INFO, GroupFurniContextMenuInfoMessageEvent);
         this._events.set(IncomingHeader.FURNITURE_POSTIT_STICKY_POLE_OPEN, FurniturePostItStickyPoleOpenEvent);
+        this._events.set(IncomingHeader.ROOM_SPECTATOR, YouAreSpectatorMessageEvent);
 
         // ROOM SETTINGS
         this._events.set(IncomingHeader.ROOM_RIGHTS_LIST, FlatControllersEvent);
         this._events.set(IncomingHeader.ROOM_RIGHTS_LIST_ADD, FlatControllerAddedEvent);
         this._events.set(IncomingHeader.ROOM_RIGHTS_LIST_REMOVE, FlatControllerRemovedEvent);
         this._events.set(IncomingHeader.ROOM_BAN_LIST, BannedUsersFromRoomEvent);
+
+        this._events.set(IncomingHeader.ROOM_SETTINGS_SAVE_ERROR, RoomSettingsSaveErrorEvent);
+        this._events.set(IncomingHeader.ROOM_SETTINGS, RoomSettingsDataEvent);
+        this._events.set(IncomingHeader.ROOM_SETTINGS_SAVE, RoomSettingsSavedEvent);
+        this._events.set(IncomingHeader.ROOM_INFO_UPDATED, RoomSettingsUpdatedEvent);
+        this._events.set(IncomingHeader.ROOM_SETTINGS_ERROR, RoomSettingsErrorEvent);
+        this._events.set(IncomingHeader.SHOW_ENFORCE_ROOM_CATEGORY, ShowEnforceRoomCategoryDialogEvent);
+        this._events.set(IncomingHeader.ROOM_BAN_REMOVE, UserUnbannedFromRoomEvent);
+
+        this._events.set(IncomingHeader.ROOM_MUTED, MuteAllInRoomEvent);
+        this._events.set(IncomingHeader.NO_SUCH_FLAT, NoSuchFlatEvent);
 
         this._events.set(IncomingHeader.FAVORITE_GROUP_UDPATE, FavoriteMembershipUpdateMessageEvent);
 
@@ -858,7 +883,6 @@ export class NitroMessages implements IMessageConfiguration
         this._events.set(IncomingHeader.WIRED_REWARD, WiredRewardResultMessageEvent);
         this._events.set(IncomingHeader.WIRED_SAVE, WiredSaveSuccessEvent);
         this._events.set(IncomingHeader.WIRED_ERROR, WiredValidationErrorEvent);
-        this._events.set(IncomingHeader.ROOM_MUTED, RoomMutedEvent);
 
         // SECURITY
         this._events.set(IncomingHeader.AUTHENTICATED, AuthenticatedEvent);

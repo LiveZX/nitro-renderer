@@ -41,9 +41,15 @@ export class IncomingHeader
     public static GIFT_WRAPPER_CONFIG = 2234;
     public static GROUP_BADGES = 2402;
     public static GROUP_CREATE_OPTIONS = 2159;
-    public static GROUP_FORUM_INFO = 3011;
+    public static GROUP_FORUM_DATA = 3011;
     public static GROUP_FORUM_LIST = 3001;
     public static GROUP_FORUM_THREADS = 1073;
+    public static GROUP_FORUM_POST = 2049;
+    public static GROUP_FORUM_POST_THREAD = 1862;
+    public static GROUP_FORUM_THREAD_MESSAGES = 509;
+    public static GROUP_FORUM_UNREAD_COUNT = 2379;
+    public static GROUP_FORUM_UPDATE_MESSAGE = 324;
+    public static GROUP_FORUM_UPDATE_THREAD = 2528;
     public static GROUP_INFO = 1702;
     public static GROUP_LIST = 420;
     public static GROUP_MEMBER = 265;
@@ -136,7 +142,7 @@ export class IncomingHeader
     public static ROOM_SETTINGS_CHAT = 1191;
     public static ROOM_SETTINGS_SAVE = 948;
     public static ROOM_SETTINGS_SAVE_ERROR = 1555;
-    public static ROOM_SETTINGS_UPDATED = 3297;
+    public static ROOM_INFO_UPDATED = 3297;
     public static ROOM_SPECTATOR = 1033;
     public static ROOM_THICKNESS = 3547;
     public static INFO_FEED_ENABLE = 3284;
@@ -374,4 +380,7 @@ export class IncomingHeader
     public static NOOBNESS_LEVEL = 3738;
     public static CAN_CREATE_ROOM_EVENT = 2599;
     public static FAVORITE_GROUP_UDPATE = 3403;
+    public static NO_SUCH_FLAT = 84;
+    public static ROOM_SETTINGS_ERROR = 2897;
+    public static SHOW_ENFORCE_ROOM_CATEGORY = 3896;
 }

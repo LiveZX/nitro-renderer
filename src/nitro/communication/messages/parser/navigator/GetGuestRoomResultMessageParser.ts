@@ -1,8 +1,8 @@
 import { IMessageParser } from '../../../../../././core/communication/messages/IMessageParser';
 import { IMessageDataWrapper } from '../../../../../core/communication/messages/IMessageDataWrapper';
-import { RoomChatSettings } from '../room/data/RoomChatSettings';
+import { RoomChatSettings } from '../../incoming/roomsettings/RoomChatSettings';
+import { RoomModerationSettings } from '../../incoming/roomsettings/RoomModerationSettings';
 import { RoomDataParser } from '../room/data/RoomDataParser';
-import { RoomModerationSettings } from '../room/data/RoomModerationSettings';
 
 export class GetGuestRoomResultMessageParser implements IMessageParser
 {

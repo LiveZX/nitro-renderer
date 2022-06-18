@@ -2,7 +2,6 @@ import { Application, IApplicationOptions } from '@pixi/app';
 import { SCALE_MODES } from '@pixi/constants';
 import { settings } from '@pixi/settings';
 import { Ticker } from '@pixi/ticker';
-import { INitroManager } from '../core';
 import { ConfigurationEvent } from '../core/configuration/ConfigurationEvent';
 import { EventDispatcher } from '../core/events/EventDispatcher';
 import { IEventDispatcher } from '../core/events/IEventDispatcher';
@@ -39,7 +38,7 @@ import { HabboWebTools } from './utils/HabboWebTools';
 
 LegacyExternalInterface.available;
 
-settings.SCALE_MODE = SCALE_MODES.NEAREST;
+settings.SCALE_MODE = (!(window.devicePixelRatio % 1)) ? SCALE_MODES.NEAREST : SCALE_MODES.LINEAR;
 settings.ROUND_PIXELS = true;
 
 export class Nitro extends Application implements INitro
@@ -54,15 +53,15 @@ export class Nitro extends Application implements INitro
     private _worker: Worker;
     private _core: INitroCore;
     private _events: IEventDispatcher;
-    private _localization: INitroLocalizationManager;
     private _communication: INitroCommunicationManager;
+    private _localization: INitroLocalizationManager;
     private _avatar: IAvatarRenderManager;
     private _roomEngine: IRoomEngine;
     private _sessionDataManager: ISessionDataManager;
     private _roomSessionManager: IRoomSessionManager;
     private _roomManager: IRoomManager;
     private _cameraManager: IRoomCameraWidgetManager;
-    private _soundManager: INitroManager;
+    private _soundManager: ISoundManager;
     private _linkTrackers: ILinkEventTracker[];
     private _workerTrackers: IWorkerEventTracker[];
 
@@ -79,8 +78,8 @@ export class Nitro extends Application implements INitro
         this._worker = null;
         this._core = core;
         this._events = new EventDispatcher();
-        this._localization = new NitroLocalizationManager();
         this._communication = new NitroCommunicationManager(core.communication);
+        this._localization = new NitroLocalizationManager(this._communication);
         this._avatar = new AvatarRenderManager();
         this._roomEngine = new RoomEngine(this._communication);
         this._sessionDataManager = new SessionDataManager(this._communication);
@@ -99,7 +98,6 @@ export class Nitro extends Application implements INitro
 
         if(this._worker) this._worker.onmessage = this.createWorkerEvent.bind(this);
     }
-    soundManager: ISoundManager;
 
     public static bootstrap(): void
     {
@@ -112,11 +110,8 @@ export class Nitro extends Application implements INitro
 
         const canvas = document.createElement('canvas');
 
-        canvas.id = 'client-wrapper';
-        canvas.className = 'client-canvas';
-
         const instance = new this(new NitroCore(), {
-            autoDensity: true,
+            autoDensity: false,
             resolution: window.devicePixelRatio,
             width: window.innerWidth,
             height: window.innerHeight,
@@ -395,14 +390,19 @@ export class Nitro extends Application implements INitro
         return this._cameraManager;
     }
 
+    public get soundManager(): ISoundManager
+    {
+        return this._soundManager;
+    }
+
     public get width(): number
     {
-        return (this.renderer.width / this.renderer.resolution);
+        return this.renderer.width;
     }
 
     public get height(): number
     {
-        return (this.renderer.height / this.renderer.resolution);
+        return this.renderer.height;
     }
 
     public get ticker(): Ticker
