@@ -16,7 +16,7 @@ export class GuestRoomSearchResultMessageParser implements IMessageParser
     {
         if(!wrapper) return false;
 
-        this._data = new GuestRoomSearchResultData(k);
+        this._data = new GuestRoomSearchResultData(wrapper);
 
         return true;
     }

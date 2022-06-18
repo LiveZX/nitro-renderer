@@ -21,7 +21,7 @@ export class OfficialRoomEntryData
     private _open: boolean;
     private _disposed: boolean;
 
-    public OfficialRoomEntryData(k: IMessageDataWrapper)
+    constructor(k: IMessageDataWrapper)
     {
         this._index = k.readInt();
         this._Str_20260 = k.readString();
